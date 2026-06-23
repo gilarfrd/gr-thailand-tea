@@ -40,7 +40,7 @@ if 'kasir_login' not in st.session_state:
     st.session_state.kasir_login = False
 
 # --- TAMPILAN HEADER UTAMA ---
-st.markdown("<h1 style='text-align: center; color: #7F5539;'>🧋 Aa dan adik 🧋</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: #7F5539;'>🧋 GR THAILAND TEA 🧋</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center; color: #B5828C;'>Sistem Poin Kasir & Portal Cek Poin Member Resmi</p>", unsafe_allow_html=True)
 st.write("---")
 
@@ -85,7 +85,7 @@ if pilihan_portal == "📱 Portal Cek Poin Member":
                 poin_kurang = 10 - poin
                 st.warning(f"Kumpulkan {int(poin_kurang)} poin lagi untuk mendapatkan 1 Cup Free Thai Tea! ✨")
         else:
-            st.error("Nomor HP tidak ditemukan. Pastikan nomor sudah benar atau daftarkan diri kamu ke kasir outlet Aa dan adik.")
+            st.error("Nomor HP tidak ditemukan. Pastikan nomor sudah benar atau daftarkan diri kamu ke kasir outlet GR THAILAND TEA.")
 
 # ==============================================================================
 # 🏪 PORTAL INTERNAL KASIR (Akses Staf Toko - Dikunci PIN)
@@ -155,7 +155,7 @@ elif pilihan_portal == "🏪 Portal Internal Kasir":
                     
         # --- TAB REGISTRASI MEMBER BARU ---
         with aksi_kasir[1]:
-            st.write("### Pendaftaran Member Baru Aa dan adik")
+            st.write("### Pendaftaran Member Baru GR THAILAND TEA")
             hp_baru = st.text_input("Masukkan Nomor HP Member Baru:")
             nama_baru = st.text_input("Masukkan Nama Lengkap Member:")
             poin_awal = st.number_input("Poin Bonus Awal:", min_value=0, value=1, step=1)
